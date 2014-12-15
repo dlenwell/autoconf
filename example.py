@@ -6,4 +6,4 @@ arg = {'two' :{ 'seven': 'override'}}
 
 merged_config = AutoConf(foo, bar, arg)
 
-print merged_config
+print merged_config.output_yaml()
