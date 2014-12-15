@@ -25,7 +25,7 @@ class AutoConf(dict):
         self.data_to_output = {}
 
         self.data_to_output = self.merge(default,location_config)
-        self.data_to_output = self.merge(data_to_output,final_override)
+        self.data_to_output = self.merge(self.data_to_output,final_override)
 
         super(AutoConf, self).__init__(self.data_to_output)
 
